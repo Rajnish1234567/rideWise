@@ -1,0 +1,42 @@
+package com.airtribe.rideWise.model;
+
+public class Rider {
+    private final int id;
+    private String name;
+    private String location;
+
+    public Rider(int id, String name, String location) {
+        this.id = id;
+        this.name = name;
+        this.location = location;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    @Override
+    public String toString() {
+        return "Rider{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", location='" + location + '\'' +
+                '}';
+    }
+}
